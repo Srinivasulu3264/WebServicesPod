@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Webservices View Controller-->
+        <scene sceneID="7d7-vw-BRT">
+            <objects>
+                <viewController storyboardIdentifier="WebservicesViewController" id="Hqb-pI-Svh" customClass="WebservicesViewController" customModule="WebServicesPod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YNo-fn-Cgn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-jh-JM8">
+                                <rect key="frame" x="40" y="617" width="295" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.49847649700000002" blue="0.26420443910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qbx-Vn-8sw"/>
+                                </constraints>
+                                <state key="normal" title="POST"/>
+                                <connections>
+                                    <action selector="postAction:" destination="Hqb-pI-Svh" eventType="touchUpInside" id="RbG-Lw-xaP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anA-44-UdH">
+                                <rect key="frame" x="10" y="70" width="355" height="407"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4t-wj-Siu">
+                                <rect key="frame" x="10" y="562" width="355" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E7t-x2-D4E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqe-PS-BF4">
+                                <rect key="frame" x="40" y="492" width="295" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.49847649700000002" blue="0.26420443910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YrZ-vq-zsI"/>
+                                </constraints>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="getAction:" destination="Hqb-pI-Svh" eventType="touchUpInside" id="efX-L8-mfZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="anA-44-UdH" firstAttribute="top" secondItem="sNR-8Z-yIx" secondAttribute="top" constant="50" id="4P9-tA-Xxk"/>
+                            <constraint firstItem="aqe-PS-BF4" firstAttribute="top" secondItem="anA-44-UdH" secondAttribute="bottom" constant="15" id="6a7-u0-MqO"/>
+                            <constraint firstItem="anA-44-UdH" firstAttribute="leading" secondItem="sNR-8Z-yIx" secondAttribute="leading" constant="10" id="LQy-Qp-y3z"/>
+                            <constraint firstItem="P4t-wj-Siu" firstAttribute="leading" secondItem="sNR-8Z-yIx" secondAttribute="leading" constant="10" id="MiP-ch-IZD"/>
+                            <constraint firstItem="XhD-jh-JM8" firstAttribute="top" secondItem="P4t-wj-Siu" secondAttribute="bottom" constant="15" id="XuZ-lz-SaZ"/>
+                            <constraint firstItem="anA-44-UdH" firstAttribute="centerX" secondItem="YNo-fn-Cgn" secondAttribute="centerX" id="YzT-CR-O8Z"/>
+                            <constraint firstItem="sNR-8Z-yIx" firstAttribute="bottom" secondItem="XhD-jh-JM8" secondAttribute="bottom" constant="10" id="beP-tx-a2n"/>
+                            <constraint firstItem="XhD-jh-JM8" firstAttribute="centerX" secondItem="YNo-fn-Cgn" secondAttribute="centerX" id="gEg-YN-VpE"/>
+                            <constraint firstItem="P4t-wj-Siu" firstAttribute="centerX" secondItem="YNo-fn-Cgn" secondAttribute="centerX" id="jtc-wE-Rby"/>
+                            <constraint firstItem="P4t-wj-Siu" firstAttribute="top" secondItem="aqe-PS-BF4" secondAttribute="bottom" constant="30" id="lXC-dL-7W5"/>
+                            <constraint firstItem="XhD-jh-JM8" firstAttribute="leading" secondItem="sNR-8Z-yIx" secondAttribute="leading" constant="40" id="nWi-xW-xw6"/>
+                            <constraint firstItem="aqe-PS-BF4" firstAttribute="centerX" secondItem="YNo-fn-Cgn" secondAttribute="centerX" id="qPC-Tp-oNX"/>
+                            <constraint firstItem="aqe-PS-BF4" firstAttribute="leading" secondItem="sNR-8Z-yIx" secondAttribute="leading" constant="40" id="r9h-Gt-YP2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sNR-8Z-yIx"/>
+                    </view>
+                    <connections>
+                        <outlet property="getResultlbl" destination="anA-44-UdH" id="XKM-5j-oDt"/>
+                        <outlet property="postResultLbl" destination="P4t-wj-Siu" id="QWz-gn-yMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UpL-Pf-TsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="45"/>
+        </scene>
+    </scenes>
+</document>

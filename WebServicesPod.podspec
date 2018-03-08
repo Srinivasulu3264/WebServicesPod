@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.name         = "WebServicesPod"
 
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
 
   s.summary      = "WebServicesPod will import the almofire framework"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   #
 
-  s.source       = { :git => "", :tag => "0.0.4" }
+  s.source       = { :git => "https://github.com/Srinivasulu3264/WebServicesPod.git", :tag => "0.0.5" }
 
 
   s.source_files  = "WebServicesPod", "WebServicesPod/**/*.{h,m,swift}"
